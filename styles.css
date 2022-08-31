@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #FFDDD2 ;
+  background-image: linear-gradient(to bottom, #EBD8D0 , #E6A487 );
+  background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -38,7 +39,7 @@ font-size: 28px;
 line-height: 33px;
 }
 header h1 span {
-  color: #D33E43;
+  color: #835f4f;
 }
 header p {
   font-size: 14px;
@@ -51,7 +52,7 @@ section {
 }
 
 section h2 {
-  background-color: #d5b297a1;
+  background-color: #e2a38541;
   padding: 8px 16px;
   text-align: center;
 
