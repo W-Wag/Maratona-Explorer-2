@@ -1,0 +1,26 @@
+@media (min-width:1025px){
+    header{
+        max-width: 100%;
+        
+        border-bottom: 2px solid #63636338;
+    }
+    main{
+        border: 2px solid #63636394;
+        background-color: #E3E3E3;
+    }
+    section {
+        max-width: 700px;
+        
+    }
+    ul{
+        position: relative;
+        left: 30%;
+    }
+    li .details {
+        max-width: 500px;
+    }
+        
+        
+
+    
+}

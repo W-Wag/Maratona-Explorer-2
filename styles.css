@@ -5,8 +5,11 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #EBD8D0 , #E6A487 );
+  background-image: url('https://static.boredpanda.com/blog/wp-content/uploads/2019/09/EBlLNIVU0AAQxsm-5d705788ce5da__880.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center bottom;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,6 +25,7 @@ h1, h2, h3, strong {
 }
 
 header {
+  background-color: #e3e3e3d2;
   padding: 32px 0;
   text-align: center;
 }
@@ -38,8 +42,9 @@ margin-bottom: 4px;
 font-size: 28px;
 line-height: 33px;
 }
-header h1 span {
-  color: #835f4f;
+header h1 span img {
+ max-width: 50px;
+ max-height: 50px;
 }
 header p {
   font-size: 14px;
@@ -47,12 +52,19 @@ header p {
   color: rgba(0, 0, 0, 0.7);
 }
 
+main{
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.391);
+}
+
 section {
   margin-bottom: 24px;
 }
 
 section h2 {
-  background-color: #e2a38541;
+  background-color: #636363;
   padding: 8px 16px;
   text-align: center;
 
