@@ -1,0 +1,9 @@
+[
+    {
+        "Nome": "Café",
+        "Preco": 5.00,
+        "Disponivel": true,
+        "Comida": false,
+        "Bebida": true
+    }
+]
