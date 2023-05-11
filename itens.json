@@ -1,6 +1,7 @@
 [
     {
         "Nome": "Café",
+        "Descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         "Preco": 5.00,
         "Disponivel": true,
         "Comida": false,
