@@ -7,6 +7,7 @@
     main{
         border: 2px solid #63636394;
         background-color: #E3E3E3;
+        max-width: 700px;
     }
     section {
         max-width: 700px;

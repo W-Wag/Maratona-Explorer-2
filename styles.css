@@ -32,7 +32,7 @@ header {
 
 header,
 section {
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
   
 }
@@ -54,7 +54,7 @@ header p {
 
 main{
   background-color: white;
-  max-width: 700px;
+  max-width: 350px;
   margin: 0 auto;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.391);
 }
@@ -64,7 +64,7 @@ section {
 }
 
 section h2 {
-  background-color: #636363;
+  background-color: #c2c0c0;
   padding: 8px 16px;
   text-align: center;
 
@@ -74,6 +74,7 @@ section h2 {
 
 ul li {
   margin-bottom: 16px;
+  margin-left: 5px;
   display: flex;
 }
 
@@ -88,4 +89,13 @@ li .details {
   color: rgba(0, 0, 0, 0.6);
   font-size: 13px;
   line-height: 21px;
+}
+.no-avaliable  h3{
+  color:#c2c0c0
+}
+.no-avaliable p {
+  color:#c2c0c0
+}
+.no-avaliable > strong {
+  color:red;
 }

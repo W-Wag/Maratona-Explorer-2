@@ -4,16 +4,33 @@ fetch('itens.json')
     .catch(err => console.error(err));
 
     const brunch = document.querySelector('.brunch');
-    const details = document.querySelector('.details');
+    const bebidas = document.querySelector('.drinks');
+    const details = document.createElement('div');
+    details.classList.add('details');
+    const price = document.createElement('strong');
+    price.classList.add('price');
    
     function renderizaItens(json) {
         for(itens of json){
-            const li = document.createElement('li');
-            li.appendChild(details);
-            details.innerHTML = `<h3>${itens.Nome}</h3> <p class="description">${itens.Descricao}<p/>`
-            li.innerHTML += `<strong class="price"> R$${itens.Preco.toFixed(2)} </strong>`;
+           Object.keys(itens).forEach((item) => {
+            console.log(item);
+           })
 
-            brunch.appendChild(li);
+        //    const li = document.createElement('li');
+        //    const ul = document.createElement('ul')
+        //    li.appendChild(details);
+        //    li.appendChild(price);
+        //    details.innerHTML += `<h3>${itens.Nome}</h3> <p class="description">${itens.Descricao}<p/>`
+        //    price.innerHTML += 'R$5.00';
+           
+
+        //    if(itens.Disponivel === false) {
+        //        li.classList.add('no-avaliable');
+        //        price.innerHTML = 'out of stock';
+        //    }
+        //    brunch.appendChild(li);
+           
+           
 
 
         }
