@@ -1,37 +1,40 @@
 fetch('itens.json')
     .then(itens => itens.json())
     .then(json => renderizaItens(json))
-    .catch(err => console.error(err));
+    .catch(err => console.log(err));
 
-    const brunch = document.querySelector('.brunch');
-    const bebidas = document.querySelector('.drinks');
-    const details = document.createElement('div');
-    details.classList.add('details');
-    const price = document.createElement('strong');
-    price.classList.add('price');
+const brunch = document.querySelector('.brunch');
+const drinks = document.querySelector('.drinks');
+ 
+function renderizaItens(json) {
+    let li = document.createElement('li');
    
-    function renderizaItens(json) {
-        for(itens of json){
-           Object.keys(itens).forEach((item) => {
-            console.log(item);
-           })
+    for(let i = 0; i<json.length; i++) {
+         console.log(json[i].Nome);
+   
+            li = document.createElement('li')
+            const details = document.createElement('div');
+                details.classList.add('details');
+            const price = document.createElement('strong');
+                price.classList.add('price');
 
-        //    const li = document.createElement('li');
-        //    const ul = document.createElement('ul')
-        //    li.appendChild(details);
-        //    li.appendChild(price);
-        //    details.innerHTML += `<h3>${itens.Nome}</h3> <p class="description">${itens.Descricao}<p/>`
-        //    price.innerHTML += 'R$5.00';
-           
+            details.innerHTML += `<h3>${json[i].Name}</h3> <p class="description">${json[i].Description}<p/>`
+            price.innerHTML = `R$${json[i].Cost.toFixed(2)}`;
+            li.appendChild(details);
+            li.appendChild(price);
 
-        //    if(itens.Disponivel === false) {
-        //        li.classList.add('no-avaliable');
-        //        price.innerHTML = 'out of stock';
-        //    }
-        //    brunch.appendChild(li);
-           
-           
+            if(json[i].isFood === true)  brunch.appendChild(li);
+            if(json[i].isDrink === true) drinks.appendChild(li);
 
+            if(json[i].isAvaliable === false) {
+                li.classList.add('no-avaliable');
+                price.innerHTML = 'out of stock';
+            }
+        
 
-        }
     }
+    
+           
+}
+
+    

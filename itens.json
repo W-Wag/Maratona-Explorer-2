@@ -1,18 +1,58 @@
 [
     {
-        "Nome": "Pão de queijo",
-        "Descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        "Preco": 5.00,
-        "Disponivel": true,
-        "Comida": false,
-        "Bebida": true
+        "Name": "Pão de queijo",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 5.00,
+        "isAvaliable": false,
+        "isFood": true,
+        "isDrink": false
+    },
+
+    {
+        "Name": "Bolo",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 7.00,
+        "isAvaliable": true,
+        "isFood": true,
+        "isDrink": false
+        
     },
     {
-        "Nome": "Cachaça",
-        "Descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        "Preco": 5.00,
-        "Disponivel": true,
-        "Comida": false,
-        "Bebida": true
+        "Name": "Pão Frances",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 7.00,
+        "isAvaliable": true,
+        "isFood": true,
+        "isDrink": false
+        
+    },
+
+
+
+
+    {
+        "Name": "Chá",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 2.50,
+        "isAvaliable": true,
+        "isFood": false,
+        "isDrink": true
+    },
+    {
+        "Name": "Café",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 4.00,
+        "isAvaliable": true,
+        "isFood": false,
+        "isDrink": true
+    },
+    {
+        "Name": "Suco",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Cost": 3.50,
+        "isAvaliable": true,
+        "isFood": false,
+        "isDrink": true
     }
+    
 ]
